@@ -29,12 +29,6 @@ color: brown;
 const StyledP8 = styled.p`
 color: cyan;
 `
-const StyledP9 = styled.p`
-color: crimson;
-`
-const StyledP10 = styled.p`
-color: olive;
-`
 const StyledH3 = styled.h3`
 color: white;
 `
@@ -63,7 +57,7 @@ const App = () => {
       setData(res.data);
     });
     }, [])
-  
+    // const items = App.map(item => <li>{item}</li> );
   return (
     // {data.map((number, index) => (
     //   <button number={number} key={index}/>
@@ -77,6 +71,19 @@ const App = () => {
       <StarWars title={data.name}
       url={data.url}
       explanation={data.homeworld}/>
+      <StyledH3>Now Some Facts!</StyledH3>
+      <StyledP3>1. Luke Skywalker was almost a girl
+ </StyledP3>
+      <StyledP4>2. Yoda was almost a monkey in a mask
+ </StyledP4>
+      <StyledP5>3. Han Solo died in the original script
+ </StyledP5>
+      <StyledP6>4. It took four men to portray one Vader
+ </StyledP6>
+      <StyledP7>5. The opening text crawl took 3 hours to shoot
+ </StyledP7>
+ <StyledP8>All facts provided by https://www.rd.com/culture/star-wars-facts/</StyledP8>
+      
     </StyledDiv>
   );
 }
