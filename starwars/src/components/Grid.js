@@ -10,12 +10,12 @@ background-color: silver;
 const Styledinfo = styled.p`
 color: white;
 `
-function StarWars(props){
+function StarWars1(props){
 //   console.log(props);
   return(
 <div>
   <StyledH1>{props.name}</StyledH1>
-  <img src={props.url} alt= 'starwarspic'/>
+  {/* <img src={props.url} alt= 'starwarspic'/> */}
   <Styledinfo>
   {props.homeworld}
   </Styledinfo>
@@ -23,4 +23,4 @@ function StarWars(props){
   );
 }
 
-export default StarWars
+export default StarWars1
