@@ -3,6 +3,7 @@ import axios from "axios"
 import './App.css';
 import StarWars1 from "./components/Grid.js"
 import Map from "./components/Map.js"
+import Header from './components/Header.js'
 
 const App = () => {
   // Try to think through what state you'll need for this app before starting. Then build out
@@ -25,6 +26,9 @@ const App = () => {
     }else{
       return (
         <div>
+          <div>
+            <Header />
+          </div>
         {persondata.map((person, index) => <Map person={person} key={index}/>)};
         </div>
       );

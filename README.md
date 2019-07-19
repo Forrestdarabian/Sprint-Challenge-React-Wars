@@ -34,6 +34,8 @@ Demonstrate your understanding of this Sprint's concepts by answering the follow
 
 - [ ] What are side effects, and how do you sync effects in a React component to state or prop changes?
 
+
+
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
